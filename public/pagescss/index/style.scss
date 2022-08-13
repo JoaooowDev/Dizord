@@ -1,4 +1,6 @@
 @import './variaveis.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 @include scroll;
 
 
@@ -7,7 +9,7 @@
 }
 
 body {
-    background-image: url(../public/img/Background.svg);
+    background-image: url(../../img/Background.svg);
     background-repeat: no-repeat;
 
 }
@@ -34,6 +36,7 @@ nav {
             font-size: 18.6641px;
             line-height: 23px;
             color: #FFFFFF;
+            text-decoration: none;
         }
 
         #login {

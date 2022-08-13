@@ -1,3 +1,11 @@
+
+@mixin ResetHtml {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 $btn-color: #424CAB;
 
 @mixin scroll {

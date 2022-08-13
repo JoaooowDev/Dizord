@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 ::-webkit-scrollbar {
   width: 7px;
   background: transparent;
@@ -21,7 +22,7 @@
 }
 
 body {
-  background-image: url(../public/img/Background.svg);
+  background-image: url(../../img/Background.svg);
   background-repeat: no-repeat;
 }
 
@@ -48,6 +49,7 @@ nav .pages a {
   font-size: 18.6641px;
   line-height: 23px;
   color: #FFFFFF;
+  text-decoration: none;
 }
 nav .pages #login {
   border-radius: 9.33207px;
