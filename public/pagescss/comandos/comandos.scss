@@ -63,13 +63,17 @@ main {
         height: 100vh;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         align-content: center;
+        column-gap: 122px;
 
         .funcoes {
             width: 730.33px;
             height: 342.67px;
+            row-gap: 12px;
+            display: flex;
+            flex-direction: column;
 
             h3 {
                 font-family: 'Montserrat';
@@ -87,8 +91,141 @@ main {
                 font-size: 21.2847px;
                 line-height: 161.9%;
                 color: #B5B5B5;
+                width: 591.98px;
+                height: 102px;
+                margin-bottom: 23px;
+            }
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 202.49px;
+                height: 57.99px;
+                background: #5865F2;
+                border-radius: 66.5147px;
+                border: none;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 21.2847px;
+                color: #FFFFFF;
+
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    column-gap: 10px;
+
+                }
             }
         }
     }
 
+}
+
+
+//------------------função "status da tabela"------------------//
+
+@mixin Status($cortexto, $corfundo, $tamanho-fundo) {
+    align-items: center;
+    text-align: center;
+    font-size: 13.8193px;
+    color: $cortexto;
+    background: $corfundo;
+    border-radius: 21.32px;
+    width: $tamanho-fundo;
+
+}
+
+//------------------função "status da tabela"------------------//
+
+.atv {
+    @include Status(#666CFF, #343661, 69.3px);
+}
+
+.manu {
+    @include Status(#FDB528, #604B22, 161.26px);
+}
+
+.int {
+    @include Status(#FF4D49, #612D2C, 82.63px);
+}
+
+//------------------função "status da tabela"------------------//
+
+
+.container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    .tabelas {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    
+        h3 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 51.9228px;
+            line-height: 63px;
+            margin-bottom: 52px;
+            color: #FFFFFF;
+        }
+    
+        table {
+            width: 1450px;
+            height: 275.87px;
+            border-collapse: collapse;
+            border-spacing: 0;
+            font-family: 'Montserrat';
+            color: #ffffff;
+            text-align: left;
+            border-radius: 20px;
+            overflow: hidden;
+    
+    
+            tr {
+    
+                height: 70px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13.8193px;
+                line-height: 28px;
+                letter-spacing: 0.195773px;
+    
+                th {
+                    padding-left: 25px;
+                }
+    
+                td {
+                    height: 70px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13.8193px;
+                    line-height: 28px;
+                    padding-left: 25px;
+                }
+            }
+        }
+    }
+}
+
+
+.cor1 {
+    background-color: #180144;
+}
+
+.cor2 {
+    background-color: #130038;
 }
