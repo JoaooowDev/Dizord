@@ -24,37 +24,3 @@ $btn-color: #424CAB;
     }
 }
 
-@mixin comDizord {
-    h4 {
-        height: 40px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 32.5416px;
-        line-height: 40px;
-        color: #000;
-        margin-bottom: 21px;
-
-    }
-
-    p {
-        height: 78px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18.6581px;
-        line-height: 140.4%;
-        color: #4D4B4B;
-    }
-}
-
-@mixin titulos {
-    width: 540px;
-    height: 63px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 51.9228px;
-    line-height: 63px;
-    color: #000
-}
