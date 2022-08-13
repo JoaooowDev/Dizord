@@ -25,6 +25,7 @@ nav .pages a {
   font-size: 18.6641px;
   line-height: 23px;
   color: #FFFFFF;
+  text-decoration: none;
 }
 nav .pages #login {
   border-radius: 9.33207px;
