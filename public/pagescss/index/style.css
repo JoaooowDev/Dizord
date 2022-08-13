@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 ::-webkit-scrollbar {
   width: 7px;
   background: transparent;
@@ -22,7 +24,7 @@
 }
 
 body {
-  background-image: url(../public/img/Background.svg);
+  background-image: url(../../img/Background.svg);
   background-repeat: no-repeat;
 }
 
