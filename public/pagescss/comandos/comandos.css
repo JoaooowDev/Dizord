@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 ::-webkit-scrollbar {
   width: 7px;
@@ -13,6 +14,9 @@
 ::-webkit-scrollbar-track {
   background-color: #0d0f1f;
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+>>>>>>> 3383448f48a1f7e4fb27043a5ff3821a19f1f3cc
 
 body {
   background-image: url(../../img/Background-comandos.svg);
