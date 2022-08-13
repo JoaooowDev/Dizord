@@ -1,4 +1,9 @@
 @import '../index/variaveis.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
+@include scroll;
+@include ResetHtml;
 
 body {
     background-image: url(../../img/Background-comandos.svg)
@@ -43,6 +48,43 @@ nav {
             color: #FFFFFF;
             border: none;
 
+        }
+    }
+
+}
+
+main {
+
+    section {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+
+        .funcoes {
+            width: 730.33px;
+            height: 342.67px;
+
+            h3 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 61.1935px;
+                line-height: 109.4%;
+                color: #FFFFFF;
+            }
+
+            p {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 21.2847px;
+                line-height: 161.9%;
+                color: #B5B5B5;
+            }
         }
     }
 
