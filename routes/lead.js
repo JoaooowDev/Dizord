@@ -8,4 +8,8 @@ routes.get('/comandos', (req, res) => {
     res.sendFile(__dirname + '/views/comandos.html');
 })
 
+routes.get('/planos', (req, res) => {
+    res.sendFile(__dirname + '/views/comandos.html');
+})
+
 module.exports = routes;

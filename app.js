@@ -9,7 +9,9 @@
     const lead = require('./routes/lead');
     app.use('/', lead);
     app.use('/comandos', lead);
+    app.use('/planos', lead);
 
 app.listen(PORT, () => {
     console.log(`Servidor iniciado na porta http://localhost:${PORT}/`);
 })
+
