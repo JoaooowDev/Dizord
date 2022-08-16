@@ -6,6 +6,8 @@
     const passport = require('passport');
     const PORT = process.env.PORT || 3000;
     app.use(express.static(__dirname + '/public'));
+    const db = require('./database/database');
+    db.then(() => console.log('Banco de dados conectado')).catch(err => console.log(err));
 
 // Configurações de Rotas
     const lead = require('./routes/lead');
@@ -17,5 +19,4 @@
 // Iniciando Servidor
     app.listen(PORT, () => {
         console.log(`Servidor iniciado na porta http://localhost:${PORT}/`);
-    })
-
+    });
