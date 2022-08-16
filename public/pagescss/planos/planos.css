@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap");
 ::-webkit-scrollbar {
   width: 7px;
   background: transparent;
@@ -19,6 +21,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -130,6 +133,127 @@ nav .pages #login:hover {
   line-height: 161.9%;
   color: #CCD2E3;
   text-decoration: none;
+}
+
+.planos {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.planos .nossos-planos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.planos .nossos-planos h3 {
+  width: 386px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50.6434px;
+  line-height: 123.5%;
+  text-align: center;
+  letter-spacing: 0.33318px;
+  color: #FFFFFF;
+  margin-bottom: 13px;
+}
+.planos .nossos-planos p {
+  width: 922.24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21.3235px;
+  line-height: 143%;
+  text-align: center;
+  letter-spacing: 0.199908px;
+  color: #EBE7FF;
+  margin-bottom: 13px;
+}
+.planos .types-planos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.planos .types-planos p {
+  width: 100px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.6581px;
+  line-height: 157%;
+  text-align: center;
+  letter-spacing: 0.133272px;
+  color: #EBE7FF;
+}
+.planos .container-planos {
+  display: flex;
+  flex-direction: row;
+}
+.planos .container-planos .menor {
+  width: 295.52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #141732;
+  border: 1.10269px solid rgba(234, 234, 255, 0.12);
+  border-radius: 11.0269px;
+}
+.planos .container-planos .menor h4 {
+  width: 242.59px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.4645px;
+  line-height: 133.4%;
+  text-align: center;
+  color: #ffffff;
+}
+.planos .container-planos .menor p {
+  width: 242.59px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.4376px;
+  line-height: 143%;
+  text-align: center;
+  letter-spacing: 0.165403px;
+  color: #EBE7FF;
+}
+.planos .container-planos .menor p img {
+  width: 15.44px;
+  height: 15.44px;
+}
+.planos .container-planos .menor h3 {
+  width: 269.06px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 52.929px;
+  line-height: 62px;
+  text-align: center;
+  color: #666CFF;
+}
+.planos .container-planos .menor img {
+  width: 110.27px;
+  height: 110.27px;
+}
+.planos .container-planos .maior {
+  width: 321.15px;
+  height: 713.01px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.planos .container-planos .maior img {
+  width: 110.27px;
+  height: 110.27px;
 }
 
 footer {
