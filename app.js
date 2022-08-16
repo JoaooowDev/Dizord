@@ -15,6 +15,10 @@
         name: 'discord.oauth2'
     }));
 
+// Passport
+    app.use(passport.initialize());
+    app.use(passport.session());
+
 // Banco de Dados
     const db = require('./database/database');
     db.then(() => console.log('Banco de dados conectado')).catch(err => console.log(err));
