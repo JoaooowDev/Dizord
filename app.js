@@ -2,6 +2,8 @@
     require('dotenv').config();
     const express = require('express');
     const app = express();
+    const session = require('express-session');
+    const passport = require('passport');
     const PORT = process.env.PORT || 3000;
     app.use(express.static(__dirname + '/public'));
 
@@ -11,7 +13,9 @@
     app.use('/comandos', lead);
     app.use('/planos', lead);
 
-app.listen(PORT, () => {
-    console.log(`Servidor iniciado na porta http://localhost:${PORT}/`);
-})
+
+// Iniciando Servidor
+    app.listen(PORT, () => {
+        console.log(`Servidor iniciado na porta http://localhost:${PORT}/`);
+    })
 
