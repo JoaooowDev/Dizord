@@ -6,6 +6,16 @@
     const passport = require('passport');
     const PORT = process.env.PORT || 3000;
     app.use(express.static(__dirname + '/public'));
+
+//Session
+    app.use(session({
+        secret: 'secret random',
+        resave: false,
+        saveUninitialized: false,
+        name: 'discord.oauth2'
+    }));
+
+// Banco de Dados
     const db = require('./database/database');
     db.then(() => console.log('Banco de dados conectado')).catch(err => console.log(err));
 
