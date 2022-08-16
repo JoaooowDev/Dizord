@@ -3,6 +3,7 @@
     const express = require('express');
     const app = express();
     const session = require('express-session');
+    const discordStrategy = require('./strategies/discordstrategy')
     const passport = require('passport');
     const PORT = process.env.PORT || 3000;
     app.use(express.static(__dirname + '/public'));
@@ -18,6 +19,12 @@
 // Passport
     app.use(passport.initialize());
     app.use(passport.session());
+
+// Midleware
+    const authRoute = require('./routes/midlewares/auth');
+    const dashboardRoute = require('./routes/midlewares/dashboard');
+    app.use('/auth', authRoute);
+    app.use('/dashboard', dashboardRoute);
 
 // Banco de Dados
     const db = require('./database/database');

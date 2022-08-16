@@ -65,6 +65,9 @@ nav .pages #login {
   color: #FFFFFF;
   border: none;
 }
+nav .pages #login:hover {
+  cursor: pointer;
+}
 
 .principal {
   width: 100%;
