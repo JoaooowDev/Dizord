@@ -9,7 +9,7 @@ routes.get('/comandos', (req, res) => {
 })
 
 routes.get('/planos', (req, res) => {
-    res.sendFile(__dirname + '/views/comandos.html');
+    res.sendFile(__dirname + '/views/planos.html');
 })
 
 module.exports = routes;
