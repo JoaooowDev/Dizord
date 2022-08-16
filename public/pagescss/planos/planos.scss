@@ -1,10 +1,13 @@
 @import '../index/variaveis.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 @include scroll;
 
 * {
     @include ResetHtml;
+    box-sizing: border-box;
 }
 
 body {
@@ -125,6 +128,143 @@ nav {
     }
 }
 
+.planos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    .nossos-planos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            width: 386px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50.6434px;
+            line-height: 123.5%;
+            text-align: center;
+            letter-spacing: 0.33318px;
+            color: #FFFFFF;
+            margin-bottom: 13px;
+        }
+
+        p {
+            width: 922.24px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 21.3235px;
+            line-height: 143%;
+            text-align: center;
+            letter-spacing: 0.199908px;
+            color: #EBE7FF;
+            margin-bottom: 13px;
+        }
+    }
+
+    .types-planos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        p {
+            width: 100px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18.6581px;
+            line-height: 157%;
+            text-align: center;
+            letter-spacing: 0.133272px;
+            color: #EBE7FF;
+        }
+    }
+
+    .container-planos {
+        display: flex;
+        flex-direction: row;
+
+        .menor {
+            width: 295.52px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background: #141732;
+            border: 1.10269px solid rgba(234, 234, 255, 0.12);
+            border-radius: 11.0269px;
+
+            h4 {
+                width: 242.59px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 26.4645px;
+                line-height: 133.4%;
+                text-align: center;
+                color: #ffffff;
+            }
+
+            p {
+                width: 242.59px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15.4376px;
+                line-height: 143%;
+                text-align: center;
+                letter-spacing: 0.165403px;
+                color: #EBE7FF;
+
+                img {
+                    width: 15.44px;
+                    height: 15.44px;
+                }
+            }
+
+            h3 {
+                width: 269.06px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 52.929px;
+                line-height: 62px;
+                text-align: center;
+                color: #666CFF;
+            }
+
+            img {
+                width: 110.27px;
+                height: 110.27px;
+            }
+        }
+
+        .maior {
+            width: 321.15px;
+            height: 713.01px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 110.27px;
+                height: 110.27px;
+
+            }
+        }
+    }
+}
+
 footer {
     background-color: #000118;
     width: 100%;
@@ -185,7 +325,7 @@ footer {
             height: 63.32px;
             display: flex;
             align-items: center;
-            
+
             a {
                 width: 1572.62px;
                 font-family: 'Montserrat';
@@ -198,4 +338,3 @@ footer {
         }
     }
 }
-
