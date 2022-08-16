@@ -1,7 +1,13 @@
 @import '../index/variaveis.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
-body{
+@include scroll;
+
+* {
+    @include ResetHtml;
+}
+
+body {
     background-image: url(../../img/Background-planos.svg);
     background-repeat: no-repeat;
 }
@@ -50,12 +56,146 @@ nav {
 
 }
 
-section {
+.principal {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: ;
-    .image{
-        .jogos{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 182px;
+
+    .image {
+        width: 665.22px;
+        height: 642.22px;
+
+        .jogos {
             display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .texto {
+        width: 563.74px;
+        height: 352.19px;
+
+        h3 {
+            width: 507.77px;
+            height: 126px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 51.9291px;
+            line-height: 63px;
+            color: #CCD2E3;
+            margin-bottom: 23px;
+        }
+
+        p {
+            width: 563.74px;
+            height: 105px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 21.3235px;
+            line-height: 161.9%;
+            color: #CCD2E3;
+            margin-bottom: 36px;
+        }
+
+        button {
+            background: #424CAB;
+            border-radius: 42.6471px;
+            width: 172.31px;
+            height: 61.65px;
+            border: none;
+
+            a {
+                width: 119px;
+                height: 35px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 21.3235px;
+                line-height: 161.9%;
+                color: #CCD2E3;
+                text-decoration: none;
+            }
         }
     }
 }
+
+footer {
+    background-color: #000118;
+    width: 100%;
+    height: 439.8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+    }
+
+    .suportes {
+        display: flex;
+        flex-direction: row;
+        width: 1487.49px;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .produtos {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18.6581px;
+            color: #ffffff;
+
+            a {
+                margin-bottom: 13px;
+                color: #ffffff;
+
+                .title {
+                    color: #454EAA;
+                }
+            }
+        }
+    }
+
+    #linha-horizontal {
+        width: 1572.62px;
+        border: 1.07px solid #454EAA;
+        margin: 50px;
+    }
+
+    .assinar {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        button {
+
+            background: #5865F2;
+            border-radius: 66.636px;
+            width: 238.96px;
+            height: 63.32px;
+            display: flex;
+            align-items: center;
+            
+            a {
+                width: 1572.62px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 21.3235px;
+                line-height: 26px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
