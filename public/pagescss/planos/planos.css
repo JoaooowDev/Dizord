@@ -27,6 +27,9 @@
 body {
   background-image: url(../../img/Background-planos.svg);
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 nav {
@@ -137,7 +140,7 @@ nav .pages #login:hover {
 
 .planos {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,6 +181,7 @@ nav .pages #login:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 75px;
 }
 .planos .types-planos p {
   width: 100px;
@@ -190,21 +194,42 @@ nav .pages #login:hover {
   letter-spacing: 0.133272px;
   color: #EBE7FF;
 }
-.planos .container-planos {
+.planos .cards {
+  width: 1020.98px;
+  height: 713.01px;
   display: flex;
   flex-direction: row;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  justify-content: center;
+  align-items: center;
 }
-.planos .container-planos .menor {
+.planos .cards .card-gratis {
   width: 295.52px;
+  height: 656.1px;
+  background: #141732;
+  border: 1.10269px solid rgba(234, 234, 255, 0.1215686275);
+  border-radius: 11.0269px;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  align-content: center;
+  justify-content: center;
+}
+.planos .cards .card-gratis .container-card1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: #141732;
-  border: 1.10269px solid rgba(234, 234, 255, 0.12);
-  border-radius: 11.0269px;
+  align-content: center;
 }
-.planos .container-planos .menor h4 {
+.planos .cards .card-gratis .container-card1 .img-card {
+  width: 110.27px;
+  height: 110.27px;
+  margin-bottom: 22px;
+  margin-top: 66px;
+}
+.planos .cards .card-gratis .container-card1 h4 {
   width: 242.59px;
   font-family: "Roboto";
   font-style: normal;
@@ -213,8 +238,9 @@ nav .pages #login:hover {
   line-height: 133.4%;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 6px;
 }
-.planos .container-planos .menor p {
+.planos .cards .card-gratis .container-card1 p {
   width: 242.59px;
   font-family: "Montserrat";
   font-style: normal;
@@ -223,14 +249,10 @@ nav .pages #login:hover {
   line-height: 143%;
   text-align: center;
   letter-spacing: 0.165403px;
-  color: #EBE7FF;
+  color: rgba(235, 231, 255, 0.768627451);
+  margin-bottom: 22px;
 }
-.planos .container-planos .menor p img {
-  width: 15.44px;
-  height: 15.44px;
-}
-.planos .container-planos .menor h3 {
-  width: 269.06px;
+.planos .cards .card-gratis .container-card1 h3 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -238,22 +260,301 @@ nav .pages #login:hover {
   line-height: 62px;
   text-align: center;
   color: #666CFF;
+  margin-bottom: 22px;
 }
-.planos .container-planos .menor img {
-  width: 110.27px;
-  height: 110.27px;
+.planos .cards .card-gratis .container-card1 .beneficios {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
 }
-.planos .container-planos .maior {
-  width: 321.15px;
+.planos .cards .card-gratis .container-card1 .beneficios .btn-gratis {
+  background: none;
+  width: 242.59px;
+  height: 42.44px;
+  border: 1.1px solid rgba(114, 225, 40, 0.5019607843);
+  border-radius: 8.8215px;
+  margin-top: 114px;
+}
+.planos .cards .card-gratis .container-card1 .beneficios .btn-gratis a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.4376px;
+  line-height: 26px;
+  letter-spacing: 0.441075px;
+  text-transform: uppercase;
+  color: #72E128;
+}
+.planos .cards .card-gratis .container-card1 .beneficios h5 {
+  width: 242.59px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.3349px;
+  line-height: 143%;
+  letter-spacing: 0.165403px;
+  color: rgba(235, 231, 255, 0.768627451);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+}
+.planos .cards .card-gratis .container-card1 .beneficios h5 img {
+  width: 15.44px;
+  height: 15.44px;
+}
+.planos .cards .card-premium {
+  width: 295.52px;
   height: 713.01px;
+  background: #141732;
+  border: 1.19833px solid #666CFF;
+  border-radius: 11.9833px;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  align-content: center;
+  justify-content: center;
+}
+.planos .cards .card-premium .container-card1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  align-content: center;
 }
-.planos .container-planos .maior img {
+.planos .cards .card-premium .container-card1 .preco {
+  display: flex;
+  flex-direction: row;
+}
+.planos .cards .card-premium .container-card1 .preco h6 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.7766px;
+  line-height: 143%;
+  text-align: center;
+  letter-spacing: 0.179749px;
+  color: rgba(235, 231, 255, 0.768627451);
+  margin-top: 5px;
+}
+.planos .cards .card-premium .container-card1 .img-card {
   width: 110.27px;
   height: 110.27px;
+  margin-bottom: 22px;
+  margin-top: 66px;
+}
+.planos .cards .card-premium .container-card1 h4 {
+  width: 242.59px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.4645px;
+  line-height: 133.4%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+.planos .cards .card-premium .container-card1 p {
+  width: 242.59px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.4376px;
+  line-height: 143%;
+  text-align: center;
+  letter-spacing: 0.165403px;
+  color: rgba(235, 231, 255, 0.768627451);
+  margin-bottom: 22px;
+}
+.planos .cards .card-premium .container-card1 h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 52.929px;
+  line-height: 62px;
+  text-align: center;
+  color: #666CFF;
+  margin-bottom: 22px;
+}
+.planos .cards .card-premium .container-card1 h3 .mensal {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.7766px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.179749px;
+  color: rgba(235, 231, 255, 0.768627451);
+}
+.planos .cards .card-premium .container-card1 .beneficios {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+}
+.planos .cards .card-premium .container-card1 .beneficios .btn-premium {
+  width: 242.59px;
+  height: 42.44px;
+  background: #666CFF;
+  border-radius: 8px;
+  border: none;
+  margin-top: 66px;
+}
+.planos .cards .card-premium .container-card1 .beneficios .btn-premium a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.4376px;
+  line-height: 26px;
+  letter-spacing: 0.441075px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.planos .cards .card-premium .container-card1 .beneficios h5 {
+  width: 242.59px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.3349px;
+  line-height: 143%;
+  letter-spacing: 0.165403px;
+  color: rgba(235, 231, 255, 0.768627451);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+}
+.planos .cards .card-premium .container-card1 .beneficios h5 img {
+  width: 15.44px;
+  height: 15.44px;
+}
+.planos .cards .card-fivem {
+  width: 295.52px;
+  height: 656.1px;
+  background: #141732;
+  border: 1.10269px solid rgba(234, 234, 255, 0.1215686275);
+  border-radius: 11.0269px;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  align-content: center;
+  justify-content: center;
+}
+.planos .cards .card-fivem .container-card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.planos .cards .card-fivem .container-card1 .preco {
+  display: flex;
+  flex-direction: row;
+}
+.planos .cards .card-fivem .container-card1 .preco h6 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.7766px;
+  line-height: 143%;
+  text-align: center;
+  letter-spacing: 0.179749px;
+  color: rgba(235, 231, 255, 0.768627451);
+  margin-top: 5px;
+}
+.planos .cards .card-fivem .container-card1 .img-card {
+  width: 110.27px;
+  height: 110.27px;
+  margin-bottom: 22px;
+  margin-top: 66px;
+}
+.planos .cards .card-fivem .container-card1 h4 {
+  width: 242.59px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.4645px;
+  line-height: 133.4%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+.planos .cards .card-fivem .container-card1 p {
+  width: 242.59px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.4376px;
+  line-height: 143%;
+  text-align: center;
+  letter-spacing: 0.165403px;
+  color: rgba(235, 231, 255, 0.768627451);
+  margin-bottom: 22px;
+}
+.planos .cards .card-fivem .container-card1 h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 52.929px;
+  line-height: 62px;
+  text-align: center;
+  color: #666CFF;
+  margin-bottom: 22px;
+}
+.planos .cards .card-fivem .container-card1 h3 .mensal {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.7766px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.179749px;
+  color: rgba(235, 231, 255, 0.768627451);
+}
+.planos .cards .card-fivem .container-card1 .beneficios {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+}
+.planos .cards .card-fivem .container-card1 .beneficios .btn-gaming {
+  background: none;
+  width: 242.59px;
+  height: 42.44px;
+  border: 1.10269px solid rgba(102, 108, 255, 0.5019607843);
+  border-radius: 8.8215px;
+}
+.planos .cards .card-fivem .container-card1 .beneficios .btn-gaming a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.4376px;
+  line-height: 26px;
+  letter-spacing: 0.441075px;
+  text-transform: uppercase;
+  color: #666CFF;
+}
+.planos .cards .card-fivem .container-card1 .beneficios h5 {
+  width: 242.59px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.3349px;
+  line-height: 143%;
+  letter-spacing: 0.165403px;
+  color: rgba(235, 231, 255, 0.768627451);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+}
+.planos .cards .card-fivem .container-card1 .beneficios h5 img {
+  width: 15.44px;
+  height: 15.44px;
 }
 
 footer {
