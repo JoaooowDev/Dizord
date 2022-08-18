@@ -7,14 +7,20 @@
     const passport = require('passport');
     const PORT = process.env.PORT || 3000;
     app.use(express.static(__dirname + '/public'));
+    const path = require('path');
 
 //Session
     app.use(session({
         secret: 'secret random',
-        resave: false,
+        resave: true,
+        cookie: { maxAge: 60000 * 60 * 24 },
         saveUninitialized: false,
         name: 'discord.oauth2'
     }));
+
+//View Engine
+    app.set('view engine', 'ejs');
+    app.set('views', path.join(__dirname, '/routes/views'));
 
 // Passport
     app.use(passport.initialize());
