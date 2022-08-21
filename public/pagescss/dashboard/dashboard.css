@@ -27,14 +27,19 @@ body {
 body main .menu {
   background: #14141C;
   width: 380px;
-  height: 1080px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 body main .menu .container-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 319px;
-  height: 984px;
+  height: 684px;
 }
 body main .menu .container-menu .login-usuario {
   display: flex;
@@ -42,6 +47,7 @@ body main .menu .container-menu .login-usuario {
   height: 55.62px;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  margin-bottom: 54px;
 }
 body main .menu .container-menu .login-usuario img {
   width: 55.17px;
@@ -69,38 +75,80 @@ body main .menu .container-menu .login-usuario .nometag-usuario p {
   line-height: 13px;
   color: #CFCFCF;
 }
-
-.tudao {
+body main .menu .container-menu .container-servidores {
   display: flex;
   flex-direction: column;
   -moz-column-gap: 10px;
        column-gap: 10px;
   background: #14141C;
   width: 319px;
+  height: 875px;
 }
-.tudao a {
+body main .menu .container-menu .container-servidores h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 23px;
+}
+body main .menu .container-menu .container-servidores .servidor {
   display: flex;
   flex-direction: row;
   width: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  background: none;
+  border-radius: 11.2155px;
+  align-items: center;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+  text-decoration: none;
 }
-
-.flex-2 {
+body main .menu .container-menu .container-servidores .servidor img {
+  width: 55.17px;
+  height: 55.62px;
+  border-radius: 10px;
+}
+body main .menu .container-menu .container-servidores .servidor h6 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+body main .menu .container-menu .container-servidores .servidor p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #CFCFCF;
+}
+body main .menu .container-menu .container-servidores .servidor .flex-2 {
   display: flex;
   flex-direction: column;
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
-
-.container-2 {
+body main .menu .container-menu .servidor:hover {
+  background: #1F1F2C;
+}
+body main .menu form button {
   display: flex;
   flex-direction: row;
-  background: #ff0000;
-}
-.container-2 img {
-  width: 55.17px;
-  height: 55.62px;
-}
-
-.container-2:hover {
-  background: #00ff00;
+  background: none;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.66px;
+  line-height: 23px;
+  color: #A20000;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  align-items: center;
 }/*# sourceMappingURL=dashboard.css.map */

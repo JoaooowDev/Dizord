@@ -14,20 +14,27 @@ body {
         .menu {
             background: #14141C;
             width: 380px;
-            height: 1080px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: space-around;
+
 
             .container-menu {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 width: 319px;
-                height: 984px;
+                height: 684px;
 
                 .login-usuario {
                     display: flex;
                     flex-direction: row;
                     height: 55.62px;
                     column-gap: 10px;
+                    margin-bottom: 54px;
 
                     img {
                         width: 55.17px;
@@ -58,47 +65,98 @@ body {
                             color: #CFCFCF;
 
                         }
+                    }
+                }
 
+                .container-servidores {
+                    display: flex;
+                    flex-direction: column;
+                    column-gap: 10px;
+                    background: #14141C;
+                    width: 319px;
+                    height: 875px;
+
+                    h5 {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #FFFFFF;
+                        margin-bottom: 23px;
                     }
 
+                    .servidor {
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        padding: 8px;
+                        display: flex;
+                        flex-direction: row;
+                        background: none;
+                        border-radius: 11.2155px;
+                        align-items: center;
+                        column-gap: 11px;
+                        text-decoration: none;
+
+
+                        img {
+                            width: 55.17px;
+                            height: 55.62px;
+                            border-radius: 10px;
+                        }
+
+                        h6 {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #FFFFFF;
+
+                        }
+
+                        p {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #CFCFCF;
+
+                        }
+
+                        .flex-2 {
+                            display: flex;
+                            flex-direction: column;
+                            column-gap: 10px;
+                        }
+                    }
+                }
+
+                .servidor:hover {
+                    background: #1F1F2C;
                 }
             }
+
+            form {
+                button {
+                    display: flex;
+                    flex-direction: row;
+                    background: none;
+                    border: none;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18.66px;
+                    line-height: 23px;
+                    color: #A20000;
+                    column-gap: 6px;
+                    align-items: center;
+                }
+
+            }
+
         }
     }
-}
-
-
-.tudao {
-    display: flex;
-    flex-direction: column;
-    column-gap: 10px;
-    background: #14141C;
-    width: 319px;
-
-    a {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-}
-
-.flex-2 {
-    display: flex;
-    flex-direction: column;
-    column-gap: 10px;
-}
-
-.container-2 {
-    display: flex;
-    flex-direction: row;
-    background: #ff0000;
-
-    img {
-        width: 55.17px;
-        height: 55.62px;
-    }
-}
-
-.container-2:hover {
-    background: #00ff00;
 }
