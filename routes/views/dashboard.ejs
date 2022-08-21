@@ -25,24 +25,25 @@
                 </div>
                 <div class="container-servidores">
                     <h5>Servidores conectados:</h5>
-
-                    <% guilds.forEach(guild=> { %>
-                        <a href="#" class="servidor">
-                            <img src="https://cdn.discordapp.com/icons/<%= guild.id %>/<%= guild.icon %>.png">
-                            <div class="flex-2">
-                                <h6>
-                                    <%= guild.name %>
-                                </h6>
-                                <p>Cargo</p>
-                            </div>
-                        </a>
+                    <div class="scroll-servidor">
+                        <% guilds.forEach(guild=> { %>
+                            <a href="#" class="servidor">
+                                <img src="https://cdn.discordapp.com/icons/<%= guild.id %>/<%= guild.icon %>.png">
+                                <div class="flex-2">
+                                    <h6>
+                                        <%= guild.name %>
+                                    </h6>
+                                    <p>Cargo</p>
+                                </div>
+                            </a>
                         <% }) %>
-                            <form action="/auth/logout">
-                                <button type="submit"><img src="./img/Sign_out_squre.svg">
-                                    <p>sair</p>
-                                </button>
-                            </form>
+                    </div>
                 </div>
+                <form action="/auth/logout">
+                    <button type="submit"><img src="./img/Sign_out_squre.svg">
+                        <p>sair</p>
+                    </button>
+                </form>
             </div>
         </div>
 

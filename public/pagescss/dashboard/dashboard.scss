@@ -19,7 +19,8 @@ body {
             flex-direction: column;
             align-content: center;
             align-items: center;
-            justify-content: space-around;
+            justify-content: flex-start;
+            position: fixed;
 
 
             .container-menu {
@@ -29,12 +30,13 @@ body {
                 width: 319px;
                 height: 684px;
 
+
                 .login-usuario {
                     display: flex;
                     flex-direction: row;
                     height: 55.62px;
                     column-gap: 10px;
-                    margin-bottom: 54px;
+                    margin: 40px 0px 54px 0px;
 
                     img {
                         width: 55.17px;
@@ -86,61 +88,70 @@ body {
                         margin-bottom: 23px;
                     }
 
-                    .servidor {
-                        display: flex;
-                        flex-direction: row;
-                        width: 100%;
-                        padding: 8px;
-                        display: flex;
-                        flex-direction: row;
-                        background: none;
-                        border-radius: 11.2155px;
-                        align-items: center;
-                        column-gap: 11px;
-                        text-decoration: none;
+                    .scroll-servidor {
+                        overflow-y: scroll;
+                        height: 675px;
 
-
-                        img {
-                            width: 55.17px;
-                            height: 55.62px;
-                            border-radius: 10px;
-                        }
-
-                        h6 {
-                            font-family: 'Montserrat';
-                            font-style: normal;
-                            font-weight: 600;
-                            font-size: 16px;
-                            line-height: 20px;
-                            color: #FFFFFF;
-
-                        }
-
-                        p {
-                            font-family: 'Montserrat';
-                            font-style: normal;
-                            font-weight: 600;
-                            font-size: 12px;
-                            line-height: 15px;
-                            color: #CFCFCF;
-
-                        }
-
-                        .flex-2 {
+                        .servidor {
                             display: flex;
-                            flex-direction: column;
-                            column-gap: 10px;
+                            flex-direction: row;
+                            width: 100%;
+                            padding: 8px;
+                            display: flex;
+                            flex-direction: row;
+                            background: none;
+                            border-radius: 11.2155px;
+                            align-items: center;
+                            column-gap: 11px;
+                            text-decoration: none;
+
+
+
+                            img {
+                                width: 55.17px;
+                                height: 55.62px;
+                                border-radius: 10px;
+                            }
+
+                            h6 {
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: #FFFFFF;
+
+                            }
+
+                            p {
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 12px;
+                                line-height: 15px;
+                                color: #CFCFCF;
+
+                            }
+
+                            .flex-2 {
+                                display: flex;
+                                flex-direction: column;
+                                column-gap: 10px;
+                            }
+                        }
+                        .servidor:hover {
+                            background: #1F1F2C;
+                            transition-duration: 0.5s
+
+
                         }
                     }
-                }
-
-                .servidor:hover {
-                    background: #1F1F2C;
                 }
             }
 
             form {
                 button {
+                    margin-top: 15px;
                     display: flex;
                     flex-direction: row;
                     background: none;
