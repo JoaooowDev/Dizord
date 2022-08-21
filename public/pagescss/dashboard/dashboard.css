@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+::-webkit-scrollbar {
+  width: 7px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  box-shadow: inset 0 0 6px #222753;
+  background-color: #2e335e;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0d0f1f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  background: #0C0C0C;
+}
+body main .menu {
+  background: #14141C;
+  width: 380px;
+  height: 1080px;
+}
+body main .menu .container-menu {
+  display: flex;
+  justify-content: center;
+  width: 319px;
+  height: 984px;
+}
+body main .menu .container-menu .login-usuario {
+  display: flex;
+  flex-direction: row;
+  height: 55.62px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+body main .menu .container-menu .login-usuario img {
+  width: 55.17px;
+  height: 55.62px;
+  border-radius: 11.2155px;
+}
+body main .menu .container-menu .login-usuario .nometag-usuario {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+body main .menu .container-menu .login-usuario .nometag-usuario h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.0283px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+body main .menu .container-menu .login-usuario .nometag-usuario p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11.0342px;
+  line-height: 13px;
+  color: #CFCFCF;
+}/*# sourceMappingURL=dashboard.css.map */
