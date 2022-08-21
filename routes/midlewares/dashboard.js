@@ -12,7 +12,11 @@ function Autorizado(req, res, next) {
 }
 
 router.get('/', Autorizado, (req, res) => {
-    res.send(200);
+    res.render('dashboard', {
+        username: req.user.username,
+        discordId: req.user.discordId,
+        guilds: req.user.guilds
+    })
 }) 
 
 router.get('/dashboard/settings', Autorizado, (req, res) => {
