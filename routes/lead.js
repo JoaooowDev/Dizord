@@ -1,6 +1,6 @@
 const routes = require('express').Router();
 
-routes.get('/', (req, res) => {
+routes.get('/', Autorizado, (req, res) => {
     res.render('index');
 });
 
@@ -11,5 +11,17 @@ routes.get('/comandos', (req, res) => {
 routes.get('/planos', (req, res) => {
     res.render('planos');
 })
+
+
+// Verificações
+function Autorizado(req, res, next) {
+    if (req.user) {
+        console.log('Usuário autenticado');
+        res.redirect('/dashboard')
+    } else {
+        console.log('Usuário não autenticado');
+        next();
+    }
+}
 
 module.exports = routes;

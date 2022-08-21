@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Dizord | Dashboard </title>
     <link rel="stylesheet" href="./pagescss/dashboard/dashboard.css">
 </head>
+
 <body>
     <main>
         <div class="menu">
@@ -14,7 +16,9 @@
                 <div class="login-usuario">
                     <img src=""> <!-- imagem do usuario -->
                     <div class="nometag-usuario">
-                        <h4><%= username %></h4>
+                        <h4>
+                            <%= username %>
+                        </h4>
                         <p>tag do usuario</p>
                     </div>
                 </div>
@@ -25,9 +29,14 @@
                         <p>NOME SERVIDOR</p>
                     </div>
                 </div>
-                <button><img src=""><p>sair</p></button>
+                <form action="/auth/logout">
+                    <button type="submit"><img src="">
+                        <p>sair</p>
+                    </button>
+                </form>
             </div>
         </div>
     </main>
 </body>
+
 </html>

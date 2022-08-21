@@ -42,7 +42,6 @@
     app.use('/comandos', lead);
     app.use('/planos', lead);
 
-
 // Iniciando Servidor
     app.listen(PORT, () => {
         console.log(`Servidor iniciado na porta http://localhost:${PORT}/`);
