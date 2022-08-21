@@ -55,7 +55,6 @@ body {
                             font-weight: 600;
                             font-size: 11.0342px;
                             line-height: 13px;
-
                             color: #CFCFCF;
 
                         }
@@ -65,6 +64,10 @@ body {
                 }
 
                 .servidores {
+                    width: 319px;
+                    display: flex;
+                    flex-direction: column;
+
                     h4 {
                         font-family: 'Montserrat';
                         font-style: normal;
@@ -74,18 +77,59 @@ body {
                         color: #FFFFFF;
                     }
 
-                    .servidores conectados {
-                        img {}
+                    .container-servidor {
+                        width: 319px;
+                        height: 69.86px;
+                        border-radius: 12.6253px;
+                        background: #FFFFFF;
+                        display: flex;
+                        align-items: center;
 
-                        p {}
 
+                        a {
+                            text-decoration: none;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            column-gap: 11px;
+
+                            img {
+                                width: 55.17px;
+                                height: 55.62px;
+                                margin-left: 8px;
+
+                            }
+
+                            .servidor-conectado {
+                                display: flex;
+                                flex-direction: column;
+
+                                h5 {
+                                    font-family: 'Montserrat';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: #FFFFFF;
+                                }
+
+                                p {
+                                    font-family: 'Montserrat';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 12px;
+                                    line-height: 15px;
+                                    color: #CFCFCF;
+                                }
+                            }
+                        }
+
+                        :hover{
+                            background: #1F1F2C;
+                        }
                     }
                 }
-
             }
-
         }
-
     }
-
 }
