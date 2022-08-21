@@ -69,60 +69,38 @@ body main .menu .container-menu .login-usuario .nometag-usuario p {
   line-height: 13px;
   color: #CFCFCF;
 }
-body main .menu .container-menu .servidores {
-  width: 319px;
+
+.tudao {
   display: flex;
   flex-direction: column;
-}
-body main .menu .container-menu .servidores h4 {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  color: #FFFFFF;
-}
-body main .menu .container-menu .servidores .container-servidor {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  background: #14141C;
   width: 319px;
-  height: 69.86px;
-  border-radius: 12.6253px;
-  background: #FFFFFF;
-  display: flex;
-  align-items: center;
 }
-body main .menu .container-menu .servidores .container-servidor a {
-  text-decoration: none;
+.tudao a {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  -moz-column-gap: 11px;
-       column-gap: 11px;
+  width: 100%;
 }
-body main .menu .container-menu .servidores .container-servidor a img {
-  width: 55.17px;
-  height: 55.62px;
-  margin-left: 8px;
-}
-body main .menu .container-menu .servidores .container-servidor a .servidor-conectado {
+
+.flex-2 {
   display: flex;
   flex-direction: column;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
-body main .menu .container-menu .servidores .container-servidor a .servidor-conectado h5 {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
+
+.container-2 {
+  display: flex;
+  flex-direction: row;
+  background: #ff0000;
 }
-body main .menu .container-menu .servidores .container-servidor a .servidor-conectado p {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  color: #CFCFCF;
+.container-2 img {
+  width: 55.17px;
+  height: 55.62px;
 }
-body main .menu .container-menu .servidores .container-servidor :hover {
-  background: #1F1F2C;
+
+.container-2:hover {
+  background: #00ff00;
 }/*# sourceMappingURL=dashboard.css.map */
