@@ -14,30 +14,36 @@
         <div class="menu">
             <div class="container-menu">
                 <div class="login-usuario">
-                    <img src=""> <!-- imagem do usuario -->
+                    <img src="https://cdn.discordapp.com/avatars/<%= discordId %>/<%= avatar %>.png">
                     <div class="nometag-usuario">
                         <h4>
                             <%= username %>
                         </h4>
-                        <p>tag do usuario</p>
+                        <p>#<%= discriminator %>
+                        </p>
                     </div>
                 </div>
                 <div class="container-servidores">
                     <h5>Servidores conectados:</h5>
-                    <a href="#" class="servidor">
-                        <img src="">
-                        <div class="flex-2">
-                            <h6>NOME SERVIDOR</h6>
-                            <p>Cargo</p>
-                        </div>
-                    </a>
+
+                    <% guilds.forEach(guild=> { %>
+                        <a href="#" class="servidor">
+                            <img src="https://cdn.discordapp.com/icons/<%= guild.id %>/<%= guild.icon %>.png">
+                            <div class="flex-2">
+                                <h6>
+                                    <%= guild.name %>
+                                </h6>
+                                <p>Cargo</p>
+                            </div>
+                        </a>
+                        <% }) %>
+                            <form action="/auth/logout">
+                                <button type="submit"><img src="./img/Sign_out_squre.svg">
+                                    <p>sair</p>
+                                </button>
+                            </form>
                 </div>
             </div>
-            <form action="/auth/logout">
-                <button type="submit"><img src="./img/Sign_out_squre.svg">
-                    <p>sair</p>
-                </button>
-            </form>
         </div>
 
     </main>

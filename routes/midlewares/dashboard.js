@@ -15,7 +15,9 @@ router.get('/', Autorizado, (req, res) => {
     res.render('dashboard', {
         username: req.user.username,
         discordId: req.user.discordId,
-        guilds: req.user.guilds
+        guilds: req.user.guilds,
+        discriminator: req.user.discriminator,
+        avatar: req.user.avatar
     })
 }) 
 
