@@ -96,7 +96,7 @@ body main .menu .container-menu .container-servidores h5 {
 }
 body main .menu .container-menu .container-servidores .scroll-servidor {
   overflow-y: scroll;
-  height: 675px;
+  height: 650px;
 }
 body main .menu .container-menu .container-servidores .scroll-servidor .servidor {
   display: flex;
