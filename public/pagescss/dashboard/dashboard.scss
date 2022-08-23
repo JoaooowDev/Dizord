@@ -11,6 +11,9 @@ body {
     background: #0C0C0C;
 
     main {
+        display: flex;
+        flex-direction: row;
+
         .menu {
             background: #14141C;
             width: 380px;
@@ -20,7 +23,6 @@ body {
             align-content: center;
             align-items: center;
             justify-content: flex-start;
-            position: fixed;
 
 
             .container-menu {
@@ -92,6 +94,7 @@ body {
                         overflow-y: scroll;
                         height: 650px;
 
+
                         .servidor {
                             display: flex;
                             flex-direction: row;
@@ -139,11 +142,10 @@ body {
                                 column-gap: 10px;
                             }
                         }
+
                         .servidor:hover {
                             background: #1F1F2C;
                             transition-duration: 0.5s
-
-
                         }
                     }
                 }
@@ -166,10 +168,70 @@ body {
                     align-items: center;
                 }
             }
-        } 
+        }
+
         // fim do menu
 
-        
+        .dashboard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 85%;
+            height: 100vh;
 
-    } 
+            .navegar {
+                width: 77vw;
+                height: 96px;
+                background: #14141C;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+
+                .links {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 10px;
+
+
+                    a {
+                        text-decoration: none;
+                        width: 167px;
+                        height: 71px;
+                        border-radius: 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18.66px;
+                        line-height: 23px;
+                        color: #FFFFFF;
+                        
+
+
+                    }
+
+                    :hover {
+                        background: #1F1F2C;
+                        transition-duration: 0.5s
+                    }
+                }
+            }
+
+            .navegacao {
+                width: 77vw;
+                height: 83.5vh;
+                background: #14141C;
+                margin-top: 20px;
+                border-radius: 15px;
+            }
+
+        }
+
+    }
 }

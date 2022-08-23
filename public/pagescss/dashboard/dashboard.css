@@ -24,6 +24,10 @@
 body {
   background: #0C0C0C;
 }
+body main {
+  display: flex;
+  flex-direction: row;
+}
 body main .menu {
   background: #14141C;
   width: 380px;
@@ -33,7 +37,6 @@ body main .menu {
   align-content: center;
   align-items: center;
   justify-content: flex-start;
-  position: fixed;
 }
 body main .menu .container-menu {
   display: flex;
@@ -158,4 +161,55 @@ body main .menu form button {
   -moz-column-gap: 6px;
        column-gap: 6px;
   align-items: center;
+}
+body main .dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  height: 100vh;
+}
+body main .dashboard .navegar {
+  width: 77vw;
+  height: 96px;
+  background: #14141C;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .dashboard .navegar .links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+body main .dashboard .navegar .links a {
+  text-decoration: none;
+  width: 167px;
+  height: 71px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18.66px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+body main .dashboard .navegar .links :hover {
+  background: #1F1F2C;
+  transition-duration: 0.5s;
+}
+body main .dashboard .navegacao {
+  width: 77vw;
+  height: 83.5vh;
+  background: #14141C;
+  margin-top: 20px;
+  border-radius: 15px;
 }/*# sourceMappingURL=dashboard.css.map */
