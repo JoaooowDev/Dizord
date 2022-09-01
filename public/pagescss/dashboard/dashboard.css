@@ -30,20 +30,20 @@ body main {
 }
 body main .menu {
   background: #14141C;
-  width: 380px;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-content: center;
   align-items: center;
-  justify-content: flex-start;
 }
 body main .menu .container-menu {
+  width: 50vw;
+  height: 684px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 319px;
-  height: 684px;
 }
 body main .menu .container-menu .login-usuario {
   display: flex;
@@ -80,13 +80,17 @@ body main .menu .container-menu .login-usuario .nometag-usuario p {
   color: #CFCFCF;
 }
 body main .menu .container-menu .container-servidores {
+  width: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
   background: #14141C;
-  width: 319px;
   height: 875px;
+}
+body main .menu .container-menu .container-servidores .scroll-servidor {
+  width: 35%;
 }
 body main .menu .container-menu .container-servidores h5 {
   font-family: "Montserrat";
@@ -97,11 +101,7 @@ body main .menu .container-menu .container-servidores h5 {
   color: #FFFFFF;
   margin-bottom: 23px;
 }
-body main .menu .container-menu .container-servidores .scroll-servidor {
-  overflow-y: scroll;
-  height: 650px;
-}
-body main .menu .container-menu .container-servidores .scroll-servidor .servidor {
+body main .menu .container-menu .container-servidores .servidor {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -115,12 +115,12 @@ body main .menu .container-menu .container-servidores .scroll-servidor .servidor
        column-gap: 11px;
   text-decoration: none;
 }
-body main .menu .container-menu .container-servidores .scroll-servidor .servidor img {
+body main .menu .container-menu .container-servidores .servidor img {
   width: 55.17px;
   height: 55.62px;
   border-radius: 10px;
 }
-body main .menu .container-menu .container-servidores .scroll-servidor .servidor h6 {
+body main .menu .container-menu .container-servidores .servidor h6 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -128,7 +128,7 @@ body main .menu .container-menu .container-servidores .scroll-servidor .servidor
   line-height: 20px;
   color: #FFFFFF;
 }
-body main .menu .container-menu .container-servidores .scroll-servidor .servidor p {
+body main .menu .container-menu .container-servidores .servidor p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -136,17 +136,17 @@ body main .menu .container-menu .container-servidores .scroll-servidor .servidor
   line-height: 15px;
   color: #CFCFCF;
 }
-body main .menu .container-menu .container-servidores .scroll-servidor .servidor .flex-2 {
+body main .menu .container-menu .container-servidores .servidor .flex-2 {
   display: flex;
   flex-direction: column;
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
-body main .menu .container-menu .container-servidores .scroll-servidor .servidor:hover {
+body main .menu .container-menu .container-servidores .servidor:hover {
   background: #1F1F2C;
   transition-duration: 0.5s;
 }
-body main .menu form button {
+body main form button {
   margin-top: 15px;
   display: flex;
   flex-direction: row;
@@ -161,55 +161,4 @@ body main .menu form button {
   -moz-column-gap: 6px;
        column-gap: 6px;
   align-items: center;
-}
-body main .dashboard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 85%;
-  height: 100vh;
-}
-body main .dashboard .navegar {
-  width: 77vw;
-  height: 96px;
-  background: #14141C;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-body main .dashboard .navegar .links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-}
-body main .dashboard .navegar .links a {
-  text-decoration: none;
-  width: 167px;
-  height: 71px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18.66px;
-  line-height: 23px;
-  color: #FFFFFF;
-}
-body main .dashboard .navegar .links :hover {
-  background: #1F1F2C;
-  transition-duration: 0.5s;
-}
-body main .dashboard .navegacao {
-  width: 77vw;
-  height: 83.5vh;
-  background: #14141C;
-  margin-top: 20px;
-  border-radius: 15px;
 }/*# sourceMappingURL=dashboard.css.map */

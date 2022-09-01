@@ -16,21 +16,21 @@ body {
 
         .menu {
             background: #14141C;
-            width: 380px;
+            width: 100vw;
             height: 100vh;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-content: center;
             align-items: center;
-            justify-content: flex-start;
 
 
             .container-menu {
+                width: 50vw;
+                height: 684px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 319px;
-                height: 684px;
 
 
                 .login-usuario {
@@ -73,12 +73,17 @@ body {
                 }
 
                 .container-servidores {
+                    width: 100vh;
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     column-gap: 10px;
                     background: #14141C;
-                    width: 319px;
                     height: 875px;
+
+                    .scroll-servidor{
+                        width: 35%;
+                    }
 
                     h5 {
                         font-family: 'Montserrat';
@@ -90,9 +95,7 @@ body {
                         margin-bottom: 23px;
                     }
 
-                    .scroll-servidor {
-                        overflow-y: scroll;
-                        height: 650px;
+
 
 
                         .servidor {
@@ -169,69 +172,4 @@ body {
                 }
             }
         }
-
-        // fim do menu
-
-        .dashboard {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 85%;
-            height: 100vh;
-
-            .navegar {
-                width: 77vw;
-                height: 96px;
-                background: #14141C;
-                border-radius: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-top: 20px;
-
-                .links {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
-                    column-gap: 10px;
-
-
-                    a {
-                        text-decoration: none;
-                        width: 167px;
-                        height: 71px;
-                        border-radius: 12px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 18.66px;
-                        line-height: 23px;
-                        color: #FFFFFF;
-                        
-
-
-                    }
-
-                    :hover {
-                        background: #1F1F2C;
-                        transition-duration: 0.5s
-                    }
-                }
-            }
-
-            .navegacao {
-                width: 77vw;
-                height: 83.5vh;
-                background: #14141C;
-                margin-top: 20px;
-                border-radius: 15px;
-            }
-
-        }
-
     }
-}
