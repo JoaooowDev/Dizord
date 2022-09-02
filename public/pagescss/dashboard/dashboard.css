@@ -161,4 +161,8 @@ body main form button {
   -moz-column-gap: 6px;
        column-gap: 6px;
   align-items: center;
+}
+body main form button:hover {
+  color: #FF0000;
+  transition-duration: 0.5s;
 }/*# sourceMappingURL=dashboard.css.map */

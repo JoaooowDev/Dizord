@@ -51,6 +51,10 @@ nav .pages a {
   color: #FFFFFF;
   text-decoration: none;
 }
+nav .pages a:hover {
+  color: #b9b9b9;
+  transition: 0.5s;
+}
 nav .pages #login {
   border-radius: 9.33207px;
   background: #424CAB;
@@ -66,6 +70,9 @@ nav .pages #login {
   border: none;
 }
 nav .pages #login:hover {
+  font-size: 19.6641px;
+  background: #3b4496;
+  transition: 0.5s;
   cursor: pointer;
 }
 
@@ -388,6 +395,9 @@ footer .suportes .produtos a {
 footer .suportes .produtos a .title {
   color: #454EAA;
 }
+footer .suportes .produtos a:hover {
+  color: #454EAA;
+}
 footer #linha-horizontal {
   width: 1572.62px;
   border: 1.07px solid #454EAA;
@@ -415,4 +425,8 @@ footer .assinar button a {
   font-size: 21.3235px;
   line-height: 26px;
   color: #FFFFFF;
+}
+footer .assinar button:hover {
+  background: #454fc0;
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */

@@ -170,6 +170,11 @@ body {
                     column-gap: 6px;
                     align-items: center;
                 }
+
+                button:hover {
+                    color: #FF0000;
+                    transition-duration: 0.5s;
+                }
             }
         }
     }

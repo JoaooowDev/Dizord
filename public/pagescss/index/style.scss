@@ -39,6 +39,12 @@ nav {
             text-decoration: none;
         }
 
+        a:hover {
+            color: #b9b9b9;
+            transition: 0.5s;
+
+        }
+
         #login {
             border-radius: 9.33207px;
             background: $btn-color;
@@ -52,15 +58,17 @@ nav {
             line-height: 23px;
             color: #FFFFFF;
             border: none;
-        }
-        
+        }        
 
         #login:hover {
+            font-size: 19.6641px;
+            background: #3b4496;
+            transition: 00.5s;
             cursor: pointer;
         }
     }
-
 }
+
 
 .principal {
     height: 100vh;
@@ -336,6 +344,10 @@ footer {
                     color: #454EAA;
                 }
             }
+
+            a:hover {
+                color: #454EAA;
+            }
         }
     }
 
@@ -369,6 +381,11 @@ footer {
                 line-height: 26px;
                 color: #FFFFFF;
             }
+        }
+
+        button:hover {
+            background: #454fc0;
+            transition: 0.5s;
         }
     }
 }
