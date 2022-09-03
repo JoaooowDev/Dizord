@@ -8,7 +8,7 @@ routes.get('/comandos', (req, res) => {
     res.render('comandos');
 })
 
-routes.get('/planos', (req, res) => {
+routes.get('/planos', Autorizado, (req, res) => {
     res.render('planos');
 })
 

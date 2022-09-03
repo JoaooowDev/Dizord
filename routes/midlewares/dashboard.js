@@ -19,7 +19,12 @@ router.get('/', Autorizado, (req, res) => {
         discriminator: req.user.discriminator,
         avatar: req.user.avatar
     })
-}) 
+})
+
+
+router.get('/servidor', Autorizado, (req, res) => {
+    res.render('controler')
+})
 
 router.get('/dashboard/settings', Autorizado, (req, res) => {
     res.send(200);
