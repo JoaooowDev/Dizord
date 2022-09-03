@@ -11,24 +11,26 @@ body {
     background: #0C0C0C;
 
     main {
+        display: flex;
+        flex-direction: row;
+
         .menu {
             background: #14141C;
-            width: 380px;
+            width: 100vw;
             height: 100vh;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-content: center;
             align-items: center;
-            justify-content: flex-start;
-            position: fixed;
 
 
             .container-menu {
+                width: 50vw;
+                height: 684px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 319px;
-                height: 684px;
 
 
                 .login-usuario {
@@ -71,12 +73,17 @@ body {
                 }
 
                 .container-servidores {
+                    width: 100vh;
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     column-gap: 10px;
                     background: #14141C;
-                    width: 319px;
                     height: 875px;
+
+                    .scroll-servidor{
+                        width: 35%;
+                    }
 
                     h5 {
                         font-family: 'Montserrat';
@@ -88,9 +95,8 @@ body {
                         margin-bottom: 23px;
                     }
 
-                    .scroll-servidor {
-                        overflow-y: scroll;
-                        height: 650px;
+
+
 
                         .servidor {
                             display: flex;
@@ -139,11 +145,10 @@ body {
                                 column-gap: 10px;
                             }
                         }
+
                         .servidor:hover {
                             background: #1F1F2C;
                             transition-duration: 0.5s
-
-
                         }
                     }
                 }
@@ -165,11 +170,11 @@ body {
                     column-gap: 6px;
                     align-items: center;
                 }
+
+                button:hover {
+                    color: #FF0000;
+                    transition-duration: 0.5s;
+                }
             }
-        } 
-        // fim do menu
-
-        
-
-    } 
-}
+        }
+    }

@@ -44,6 +44,12 @@ nav {
             text-decoration: none;
         }
 
+        a:hover {
+            color: #b9b9b9;
+            transition: 0.5s;
+
+        }
+
         #login {
             border-radius: 9.33207px;
             background: $btn-color;
@@ -57,16 +63,15 @@ nav {
             line-height: 23px;
             color: #FFFFFF;
             border: none;
-
-        }
-
-
+        }        
 
         #login:hover {
+            font-size: 19.6641px;
+            background: #3b4496;
+            transition: 00.5s;
             cursor: pointer;
         }
     }
-
 }
 
 .principal {
@@ -285,7 +290,7 @@ nav {
                         border: 1.1px solid #72e12880;
                         border-radius: 8.8215px;
                         margin-top: 114px;
-                        ;
+                        
 
 
                         a {
@@ -299,6 +304,11 @@ nav {
                             text-transform: uppercase;
                             color: #72E128;
                         }
+                    }
+
+                    .btn-gratis:hover {
+                        background: #21410c80;
+                        transition: 0.3s;
                     }
 
                     h5 {
@@ -430,7 +440,7 @@ nav {
                         border-radius: 8px;
                         border: none;
                         margin-top: 66px;
-                        ;
+                        
 
                         a {
                             text-decoration: none;
@@ -443,6 +453,14 @@ nav {
                             text-transform: uppercase;
                             color: #ffffff;
                         }
+                    }
+
+                    .btn-premium:hover {
+                        color: #ffffff;
+                        background: #343791;
+                        transition: 0.3s;
+                    }
+                        
                     }
 
                     h5 {
@@ -611,7 +629,7 @@ nav {
             }
         }
     }
-}
+
 
 
 footer {
@@ -651,6 +669,10 @@ footer {
                     color: #454EAA;
                 }
             }
+
+            a:hover {
+                color: #454EAA;
+            }
         }
     }
 
@@ -674,7 +696,7 @@ footer {
             height: 63.32px;
             display: flex;
             align-items: center;
-
+            
             a {
                 width: 1572.62px;
                 font-family: 'Montserrat';
@@ -684,6 +706,11 @@ footer {
                 line-height: 26px;
                 color: #FFFFFF;
             }
+        }
+
+        button:hover {
+            background: #454fc0;
+            transition: 0.5s;
         }
     }
 }

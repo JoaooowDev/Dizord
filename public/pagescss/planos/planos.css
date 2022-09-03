@@ -57,6 +57,10 @@ nav .pages a {
   color: #FFFFFF;
   text-decoration: none;
 }
+nav .pages a:hover {
+  color: #b9b9b9;
+  transition: 0.5s;
+}
 nav .pages #login {
   border-radius: 9.33207px;
   background: #424CAB;
@@ -72,6 +76,9 @@ nav .pages #login {
   border: none;
 }
 nav .pages #login:hover {
+  font-size: 19.6641px;
+  background: #3b4496;
+  transition: 0.5s;
   cursor: pointer;
 }
 
@@ -286,6 +293,10 @@ nav .pages #login:hover {
   text-transform: uppercase;
   color: #72E128;
 }
+.planos .cards .card-gratis .container-card1 .beneficios .btn-gratis:hover {
+  background: rgba(33, 65, 12, 0.5019607843);
+  transition: 0.3s;
+}
 .planos .cards .card-gratis .container-card1 .beneficios h5 {
   width: 242.59px;
   font-family: "Montserrat";
@@ -412,7 +423,12 @@ nav .pages #login:hover {
   text-transform: uppercase;
   color: #ffffff;
 }
-.planos .cards .card-premium .container-card1 .beneficios h5 {
+.planos .cards .card-premium .container-card1 .beneficios .btn-premium:hover {
+  color: #ffffff;
+  background: #343791;
+  transition: 0.3s;
+}
+.planos .cards .card-premium .container-card1 h5 {
   width: 242.59px;
   font-family: "Montserrat";
   font-style: normal;
@@ -427,11 +443,11 @@ nav .pages #login:hover {
   -moz-column-gap: 11px;
        column-gap: 11px;
 }
-.planos .cards .card-premium .container-card1 .beneficios h5 img {
+.planos .cards .card-premium .container-card1 h5 img {
   width: 15.44px;
   height: 15.44px;
 }
-.planos .cards .card-fivem {
+.planos .card-fivem {
   width: 295.52px;
   height: 656.1px;
   background: #141732;
@@ -444,17 +460,17 @@ nav .pages #login:hover {
   align-content: center;
   justify-content: center;
 }
-.planos .cards .card-fivem .container-card1 {
+.planos .card-fivem .container-card1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
 }
-.planos .cards .card-fivem .container-card1 .preco {
+.planos .card-fivem .container-card1 .preco {
   display: flex;
   flex-direction: row;
 }
-.planos .cards .card-fivem .container-card1 .preco h6 {
+.planos .card-fivem .container-card1 .preco h6 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -465,13 +481,13 @@ nav .pages #login:hover {
   color: rgba(235, 231, 255, 0.768627451);
   margin-top: 8px;
 }
-.planos .cards .card-fivem .container-card1 .img-card {
+.planos .card-fivem .container-card1 .img-card {
   width: 110.27px;
   height: 110.27px;
   margin-bottom: 22px;
   margin-top: 66px;
 }
-.planos .cards .card-fivem .container-card1 h4 {
+.planos .card-fivem .container-card1 h4 {
   width: 242.59px;
   font-family: "Roboto";
   font-style: normal;
@@ -482,7 +498,7 @@ nav .pages #login:hover {
   color: #ffffff;
   margin-bottom: 6px;
 }
-.planos .cards .card-fivem .container-card1 p {
+.planos .card-fivem .container-card1 p {
   width: 242.59px;
   font-family: "Montserrat";
   font-style: normal;
@@ -494,7 +510,7 @@ nav .pages #login:hover {
   color: rgba(235, 231, 255, 0.768627451);
   margin-bottom: 22px;
 }
-.planos .cards .card-fivem .container-card1 h3 {
+.planos .card-fivem .container-card1 h3 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -504,7 +520,7 @@ nav .pages #login:hover {
   color: #666CFF;
   margin-bottom: 22px;
 }
-.planos .cards .card-fivem .container-card1 h3 .mensal {
+.planos .card-fivem .container-card1 h3 .mensal {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -514,19 +530,19 @@ nav .pages #login:hover {
   letter-spacing: 0.179749px;
   color: rgba(235, 231, 255, 0.768627451);
 }
-.planos .cards .card-fivem .container-card1 .beneficios {
+.planos .card-fivem .container-card1 .beneficios {
   display: flex;
   flex-direction: column;
   row-gap: 17px;
 }
-.planos .cards .card-fivem .container-card1 .beneficios .btn-gaming {
+.planos .card-fivem .container-card1 .beneficios .btn-gaming {
   background: none;
   width: 242.59px;
   height: 42.44px;
   border: 1.10269px solid rgba(102, 108, 255, 0.5019607843);
   border-radius: 8.8215px;
 }
-.planos .cards .card-fivem .container-card1 .beneficios .btn-gaming a {
+.planos .card-fivem .container-card1 .beneficios .btn-gaming a {
   text-decoration: none;
   font-family: "Inter";
   font-style: normal;
@@ -537,7 +553,7 @@ nav .pages #login:hover {
   text-transform: uppercase;
   color: #666CFF;
 }
-.planos .cards .card-fivem .container-card1 .beneficios h5 {
+.planos .card-fivem .container-card1 .beneficios h5 {
   width: 242.59px;
   font-family: "Montserrat";
   font-style: normal;
@@ -552,7 +568,7 @@ nav .pages #login:hover {
   -moz-column-gap: 11px;
        column-gap: 11px;
 }
-.planos .cards .card-fivem .container-card1 .beneficios h5 img {
+.planos .card-fivem .container-card1 .beneficios h5 img {
   width: 15.44px;
   height: 15.44px;
 }
@@ -592,6 +608,9 @@ footer .suportes .produtos a {
 footer .suportes .produtos a .title {
   color: #454EAA;
 }
+footer .suportes .produtos a:hover {
+  color: #454EAA;
+}
 footer #linha-horizontal {
   width: 1572.62px;
   border: 1.07px solid #454EAA;
@@ -619,4 +638,8 @@ footer .assinar button a {
   font-size: 21.3235px;
   line-height: 26px;
   color: #FFFFFF;
+}
+footer .assinar button:hover {
+  background: #454fc0;
+  transition: 0.5s;
 }/*# sourceMappingURL=planos.css.map */
