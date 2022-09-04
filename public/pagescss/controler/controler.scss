@@ -1,0 +1,12 @@
+@import '../index/variaveis.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+@include scroll;
+
+* {
+    @include ResetHtml;
+}
+
+body{
+    background: #0C0C0C;
+}
