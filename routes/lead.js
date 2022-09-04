@@ -13,6 +13,7 @@ routes.get('/planos', Autorizado, (req, res) => {
 })
 
 
+
 // Verificações
 function Autorizado(req, res, next) {
     if (req.user) {
