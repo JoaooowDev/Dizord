@@ -35,7 +35,7 @@
                     <div class="scroll-servidor">
                         <% guilds.forEach(guild => { %>
                             <% if (guild.owner === true) { %>
-                            <a href="/<%= guild.id %>" class="servidor">
+                            <a href="/dashboard/<%= guild.id %>" class="servidor">
                                     <% if(guild.icon === null) { %>
                                         <img src="./img/logobranca.svg">
                                     <% } else { %>

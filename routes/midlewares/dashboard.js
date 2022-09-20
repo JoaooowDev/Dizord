@@ -22,9 +22,10 @@ router.get('/', Autorizado, (req, res) => {
     })
 })
 
-
-router.get('/servidor', Autorizado, (req, res) => {
-    res.render('servidor')
+router.get('/:serverid', Autorizado, (req, res) => {
+    res.render('servidor', {
+        serverid: req.user.guildId
+    })
 })
 
 router.get('/settings', Autorizado, (req, res) => {
