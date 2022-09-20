@@ -10,3 +10,13 @@
 body {
     background: white;
 }
+
+section {
+    .menu {
+        background-color: #14141C;
+        width: 350px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+    }
+}

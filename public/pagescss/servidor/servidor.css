@@ -22,5 +22,13 @@
 }
 
 body {
-  background: white;
+  background: #0C0C0C;
+}
+
+section .menu {
+  background-color: #14141C;
+  width: 350px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
 }/*# sourceMappingURL=servidor.css.map */
