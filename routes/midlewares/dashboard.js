@@ -24,10 +24,10 @@ router.get('/', Autorizado, (req, res) => {
 
 
 router.get('/servidor', Autorizado, (req, res) => {
-    res.render('controler')
+    res.render('servidor')
 })
 
-router.get('/dashboard/settings', Autorizado, (req, res) => {
+router.get('/settings', Autorizado, (req, res) => {
     res.send(200);
 })
 

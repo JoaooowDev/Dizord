@@ -31,6 +31,7 @@
     const dashboardRoute = require('./routes/midlewares/dashboard');
     app.use('/auth', authRoute);
     app.use('/dashboard', dashboardRoute);
+    app.use('/servidor', dashboardRoute);
 
 // Banco de Dados
     const db = require('./database/database');
