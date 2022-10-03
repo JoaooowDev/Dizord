@@ -18,15 +18,22 @@
                 <div class="login-usuario">
                     <% if (avatar === null) { %>
                         <img src="./img/logobranca.svg">>
+                    <% } else if ( discordId === "939728555376537671" || discordId === "447934597179637760" || discordId === "355411377827086336") { %>
+                        <a href="/dashboard/admin"><img id='avatar-usuario' src="https://cdn.discordapp.com/avatars/<%= discordId %>/<%= avatar %>.png"></a>
                     <% } else { %>
-                        <img src="https://cdn.discordapp.com/avatars/<%= discordId %>/<%= avatar %>.png">
+                        <img id='avatar-usuario' src="https://cdn.discordapp.com/avatars/<%= discordId %>/<%= avatar %>.png">
                     <% } %>
 
                     <div class="nometag-usuario">
                         <h4>
                             <%= username %>
                         </h4>
-                        <p>#<%= discriminator %>
+                        <p>
+                            <% if ( discordId === "939728555376537671" || discordId === "447934597179637760" || discordId === "355411377827086336") { %>
+                                #<%= discriminator %> - Admin
+                            <% } else {%>
+                                #<%= discriminator %>
+                            <% } %>
                         </p>
                     </div>
                 </div>

@@ -12,6 +12,10 @@ routes.get('/planos', Autorizado, (req, res) => {
     res.render('planos');
 })
 
+routes.get('/forbidden', Autorizado, (req, res) => {
+    res.render('forbidden');
+})
+
 
 
 // Verificações
