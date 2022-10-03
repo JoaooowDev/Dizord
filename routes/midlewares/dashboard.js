@@ -11,6 +11,8 @@
         }
     }
 
+// - Funções
+
 // - Rotas   
     // - http://localhost:3000/dashboard
         router.get('/', Autorizado, (req, res) => {
@@ -31,19 +33,21 @@
             } else {
                 res.redirect('serverFalse')
             }
-            
+
         })
 
     // - http://localhost:3000/dashboard/ID_DO_SERVIDOR
         router.get('/:serverid', Autorizado, async (req, res) => {
-            const serverId = req.params.serverid
-            const discordUserFound = await DiscordUser.findOne({ guilds: { '$elemMatch': { id: serverId } }})
-
-            if (!discordUserFound) return res.render('serverFalse')
-
-            const guild = discordUserFound.guilds.find(guild => guild.id === serverId)
-
-            if ( guild.owner == false ) return res.render('ownerFalse')
+            // Recebendo o parametro
+                const serverId = req.params.serverid
+            // Buscando a guilda com o id do parametro
+                    const discordUserFound = await DiscordUser.findOne({ guilds: { '$elemMatch': { id: serverId } }})
+            // Caso a guilda do id do parametro nao exista
+                    if (!discordUserFound) return res.render('serverFalse')
+            // Buscando os dados da guilda
+                    const guild = discordUserFound.guilds.find(guild => guild.id === serverId)
+            // Verificando se é dono da guilda
+                if ( guild.owner == false ) return res.render('ownerFalse')
 
             return res.render('servidor', {
                 serverId: guild.id,
