@@ -21,10 +21,8 @@ passport.use(new DiscordStrategy({
     try {
         const user = await DiscordUser.findOneAndUpdate({ discordId: profile.id }, {username: profile.username, guilds: profile.guilds, discriminator: profile.discriminator, avatar: profile.avatar}, {new: true, upsert: true});
         if(user) {
-            console.log('O usuario existe')
             done(null, user)
         } else {
-            console.log('O usuario não existe')
             const newUser = await DiscordUser.create({
                 discordId: profile.id,
                 username: profile.username,

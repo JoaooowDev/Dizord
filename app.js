@@ -4,18 +4,26 @@
     const app = express();
     const session = require('express-session');
     const discordStrategy = require('./strategies/discordstrategy')
+    const MongoStore = require('connect-mongo');
     const passport = require('passport');
+    const db = require('./database/database');
     const PORT = process.env.PORT || 3000;
     app.use(express.static(__dirname + '/public'));
     const path = require('path');
+    const mongoose = require('mongoose')
 
 //Session
     app.use(session({
-        secret: 'secret random',
-        resave: true,
+        secret: 'unicornio saltitante com cabeca de macaco',
         cookie: { maxAge: 60000 * 60 * 24 },
         saveUninitialized: false,
-        name: 'discord.oauth2'
+        resave: false,
+        name: 'discord.oauth2',
+        store: MongoStore.create({ 
+            mongoUrl: 'mongodb://localhost:27017/discordauth',
+            autoRemove: 'interval',
+            autoRemoveInterval: 10 
+        })
     }));
 
 //View Engine
@@ -34,8 +42,7 @@
     app.use('/servidor', dashboardRoute);
 
 // Banco de Dados
-    const db = require('./database/database');
-    db.then(() => console.log('Banco de dados conectado')).catch(err => console.log(err));
+    db.then(() => console.log('    [Banco de Dados] Iniciado')).catch(err => console.log('[Banco de dados] Erro ao conecta: ' + err));
 
 // Configurações de Rotas
     const lead = require('./routes/lead');
@@ -45,5 +52,9 @@
 
 // Iniciando Servidor
     app.listen(PORT, () => {
-        console.log(`Servidor iniciado na porta http://localhost:${PORT}/`);
+        console.log(`    [Servidor] http://localhost:${PORT}/`);
     });
+
+// Console
+    const { meuConsole } = require('./console/consoleclear')
+    meuConsole()

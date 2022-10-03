@@ -17,10 +17,8 @@ routes.get('/planos', Autorizado, (req, res) => {
 // Verificações
 function Autorizado(req, res, next) {
     if (req.user) {
-        console.log('Usuário autenticado');
         res.redirect('/dashboard')
     } else {
-        console.log('Usuário não autenticado');
         next();
     }
 }
