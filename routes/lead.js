@@ -16,6 +16,9 @@ routes.get('/forbidden', Autorizado, (req, res) => {
     res.render('forbidden');
 })
 
+routes.get('/suporte', Autorizado, (req, res) => {
+    res.render('suporte')
+})
 
 
 // Verificações
