@@ -22,7 +22,7 @@
         store: MongoStore.create({ 
             mongoUrl: 'mongodb://localhost:27017/discordauth',
             autoRemove: 'interval',
-            autoRemoveInterval: 10 
+            autoRemoveInterval: 10
         })
     }));
 
@@ -42,7 +42,7 @@
     app.use('/servidor', dashboardRoute);
 
 // Banco de Dados
-    db.then(() => console.log('    [Banco de Dados] Iniciado')).catch(err => console.log('[Banco de dados] Erro ao conecta: ' + err));
+    db.then(() => console.log('    [Banco de Dados] Iniciado')).catch(err => console.log('[Banco de dados] Erro ao conectar: ' + err));
 
 // Configurações de Rotas
     const lead = require('./routes/lead');

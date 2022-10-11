@@ -1,6 +1,7 @@
 // - Requisições
     const router = require('express').Router();
     const DiscordUser = require('../../models/DiscordUser');
+    const DiscordServer = require('../../models/DiscordServer')
 
 // - Middleware
     function Autorizado(req, res, next) {
@@ -11,7 +12,39 @@
         }
     }
 
-// - Funções
+    async function midServerId (req, res, next) {
+        const serverId = req.params.serverid
+        const discordUserFound = await DiscordUser.findOne({ guilds: { '$elemMatch': { id: serverId } }})
+        if (!discordUserFound) return 
+        const guild = discordUserFound.guilds.find(guild => guild.id === serverId)
+        
+        if( guild.owner == true ) {
+
+            const discordServerFound = await DiscordServer.findOne({ idServidor: guild.id })
+
+            if (!discordServerFound) {
+                const newServer = await DiscordServer.create({
+                    idServidor: guild.id,
+                    Plano: "free",
+                    nomeServidor: guild.name
+                })
+                await newServer.save()
+                next()
+                
+            } else {
+                next()
+            }
+
+        } else {
+            res.render('ownerFalse', {
+                username: req.user.username,
+                discordId: req.user.discordId,
+                guilds: req.user.guilds,
+                discriminator: req.user.discriminator,
+                avatar: req.user.avatar
+            })
+        }
+    }
 
 // - Rotas   
     // - http://localhost:3000/dashboard
@@ -31,35 +64,31 @@
             if( req.user.discordId === "939728555376537671" || req.user.discordId === "447934597179637760" || req.user.discordId === "355411377827086336" ) {
                 res.render('dashAdmin')
             } else {
-                res.redirect('serverFalse')
+                res.redirect('/')
             }
 
         })
 
     // - http://localhost:3000/dashboard/ID_DO_SERVIDOR
-        router.get('/:serverid', Autorizado, async (req, res) => {
-            // Recebendo o parametro
-                const serverId = req.params.serverid
-            // Buscando a guilda com o id do parametro
-                    const discordUserFound = await DiscordUser.findOne({ guilds: { '$elemMatch': { id: serverId } }})
-            // Caso a guilda do id do parametro nao exista
-                    if (!discordUserFound) return res.render('serverFalse')
-            // Buscando os dados da guilda
-                    const guild = discordUserFound.guilds.find(guild => guild.id === serverId)
-            // Verificando se é dono da guilda
-                if ( guild.owner == false ) return res.render('ownerFalse')
-
-            return res.render('servidor', {
-                serverId: guild.id,
-                serverName: guild.name,
-                serverOwner: guild.owner
+        router.get('/:serverid', Autorizado, midServerId, async (req, res) => {
+            const servidor = await DiscordServer.findOne({ idServidor: req.params.serverid })
+            res.render('servidor', {
+                idDoServidor: servidor.idServidor,
+                username: req.user.username,
+                discordId: req.user.discordId,
+                guilds: req.user.guilds,
+                discriminator: req.user.discriminator,
+                avatar: req.user.avatar
             })
         })
-    
 
-
-    // - http://localhost:3000/dashboard/settings
-
+    // - http://localhost:3000/dashboard/ID_DO_SERVIDOR/administracao
+        router.get('/:serverid/administracao', Autorizado, midServerId, async (req, res) => {
+            const servidor = await DiscordServer.findOne({ idServidor: req.params.serverid})
+            res.render('administracao', {
+                idDoServidor: servidor.idServidor
+            })
+        })
 
 // - Exportação
     module.exports = router;

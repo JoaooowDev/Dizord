@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dizord | Configurações do Servidor</title>
+    <link rel="icon" href="../img/logo.svg">
     <link rel="stylesheet" href="../pagescss/servidor/servidor.css">
 </head>
 <body>
     <section>
         <div class="menu">
             <div class="containermenu">
-                <div class="login-usuario">
-                    <img src="" alt="" srcset="">
+                <div class="usuario">
+                    <img id='avatar-usuario' src="https://cdn.discordapp.com/avatars/<%= discordId %>/<%= avatar %>.png">
+                    <div class="nick-usuario">
+                        <h4><%= username %></h4>
+                        <p>#<%= discriminator%></p>
+                    </div>
+                </div>
+
+                <div class="menus">
+                    <p class="titlemenu">Menu</p>
+                    <ul>
+                        <li><img src="../img/icon-house.svg"><p class="item-li">Inicio</p></li>
+                        <li><img src="../img/icon-admin.svg"><p class="item-li">Administração</p></li>
+                        <li><img src="../img/icon-game.svg"><p class="item-li">Diversão</p></li>
+                        <li><img src="../img/icon-lapis.svg"><p class="item-li">Customização</p></li>
+                        <li><img src="../img/icon-shield.svg"><p class="item-li">Proteção</p></li>
+                        <li><img src="../img/icon-wallet.svg"><p class="item-li">Financeiro</p></li>
+                        <li><img src="../img/icon-dice.svg"><p class="item-li">Sorteios</p></li>
+                        <li><img src="../img/icon-star.svg"><p class="item-li">Vip</p></li>
+                    </ul>
                 </div>
             </div>
         </div>

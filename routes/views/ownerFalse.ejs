@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../img/logo.svg">
+    <link rel="stylesheet" href="../pagescss/ownerFalse/ownerFalse.css" >
+    <title>Dizord | Error</title>
 </head>
 <body>
-    <h1> Pagina quando a pessoa acessar um servidor que ela nao for dono </h1>
-    <a href="/dashboard"><button><img src="../img/Sign_out_squre.svg">Voltar</button></a>
+    <div class="geral">
+        <div class="geral2">
+            <div class="usuario">
+                <img id='avatar-usuario' src="https://cdn.discordapp.com/avatars/<%= discordId %>/<%= avatar %>.png">
+                <div class="nick-usuario">
+                    <h4><%= username %></h4>
+                    <p>#<%= discriminator%></p>
+                </div>
+            </div>
+            <h1>Hey espertinho(a), me parece que você não é dono deste servidor!<br/>
+                Evite tentar burlar nossos sistemas para não ser bloqueado de nosso painel.</h1>
+            <a href="/dashboard"><button><img src="../img/Sign_out_squre.svg">Voltar</button></a>
+        </div>
+    </div>
+
 </body>
 </html>

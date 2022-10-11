@@ -23,6 +23,7 @@
 
 body {
   background: #0C0C0C;
+  font-family: "Montserrat", "Arial";
 }
 
 section .menu {
@@ -31,4 +32,56 @@ section .menu {
   height: 100vh;
   position: fixed;
   top: 0;
+  display: flex;
+  justify-content: center;
+}
+section .usuario {
+  margin-top: 75px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  height: 55.62px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+section .usuario img {
+  width: 55.17px;
+  height: 55.62px;
+  border-radius: 11.2155px;
+}
+section .usuario .nick-usuario {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+section .usuario .nick-usuario h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.0283px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+section .usuario .nick-usuario p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11.0342px;
+  line-height: 13px;
+  color: #CFCFCF;
+}
+section .menus {
+  color: white;
+  font-size: 1.2rem;
+}
+section .menus .titlemenu {
+  margin-bottom: 40px;
+}
+section ul li {
+  margin-bottom: 40px;
+  display: flex;
+  color: white;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
 }/*# sourceMappingURL=servidor.css.map */

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #0C0C0C;
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+}
+
+.geral {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.geral2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 30rem;
+  position: absolute;
+  top: 25%;
+}
+
+.usuario {
+  display: flex;
+  flex-direction: row;
+  height: 55.62px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.usuario img {
+  width: 55.17px;
+  height: 55.62px;
+  border-radius: 11.2155px;
+}
+.usuario .nick-usuario {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.usuario .nick-usuario h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.0283px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.usuario .nick-usuario p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11.0342px;
+  line-height: 13px;
+  color: #CFCFCF;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+a button {
+  display: flex;
+  flex-direction: row;
+  background: none;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.66px;
+  line-height: 23px;
+  color: #A20000;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  align-items: center;
+}
+a button:hover {
+  color: #FF0000;
+  transition-duration: 0.5s;
+}/*# sourceMappingURL=ownerFalse.css.map */
