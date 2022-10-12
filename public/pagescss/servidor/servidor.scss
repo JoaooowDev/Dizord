@@ -5,6 +5,7 @@
 
 * {
     @include ResetHtml;
+    text-decoration: none;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
     font-family: "Montserrat", "Arial";
 }
 
-section {
+.menulateral {
 
     .menu {
         background-color: #14141C;
@@ -74,6 +75,11 @@ section {
     }
     
     ul {
+
+        .selecionado {
+            color: #8F8F8F;
+        }
+
         li {
             margin-bottom: 40px;
             display: flex;
@@ -82,6 +88,74 @@ section {
             align-items: center;
             text-align: center;
         }
+
+        li:hover {
+            cursor: pointer;
+        }
+    }
+
+    .voltar {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        button {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            background: none;
+            border: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18.66px;
+            line-height: 23px;
+            color: #A20000;
+            column-gap: 6px;
+            align-items: center;
+        }
+    
+        button:hover {
+            color: #FF0000;
+            transition-duration: 0.5s;
+        }
+        
+    }
+
+    .botao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #666CFF;
+        border-style: none;
+        border-radius: 10px;
+        width: 100%;
+        height: 2.7rem;
+    }
+
+    .botao:hover {
+        cursor: pointer;
     }
 }
 
+.conteudo {
+    background: #14141C;
+    position: fixed;
+    top: 30px;
+    left: 385px;
+    width: calc(100% - 350px - 70px);
+    height: calc(100vh - 35px - 30px);
+    border-radius: 15px;
+
+    .geral-conteudo {
+        
+        canvas {
+            max-width: 400px;
+            max-height: 400px;
+        }
+
+    }
+}

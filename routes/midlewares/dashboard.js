@@ -78,7 +78,8 @@
                 discordId: req.user.discordId,
                 guilds: req.user.guilds,
                 discriminator: req.user.discriminator,
-                avatar: req.user.avatar
+                avatar: req.user.avatar,
+                plano: servidor.Plano
             })
         })
 

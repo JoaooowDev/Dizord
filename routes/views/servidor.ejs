@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../pagescss/servidor/servidor.css">
 </head>
 <body>
-    <section>
+    <section class="menulateral">
         <div class="menu">
             <div class="containermenu">
                 <div class="usuario">
@@ -23,7 +23,7 @@
                 <div class="menus">
                     <p class="titlemenu">Menu</p>
                     <ul>
-                        <li><img src="../img/icon-house.svg"><p class="item-li">Inicio</p></li>
+                        <li class="selecionado"><img src="../img/icon-house-gray.svg"><p class="item-li">Inicio</p></li>
                         <li><img src="../img/icon-admin.svg"><p class="item-li">Administração</p></li>
                         <li><img src="../img/icon-game.svg"><p class="item-li">Diversão</p></li>
                         <li><img src="../img/icon-lapis.svg"><p class="item-li">Customização</p></li>
@@ -33,8 +33,25 @@
                         <li><img src="../img/icon-star.svg"><p class="item-li">Vip</p></li>
                     </ul>
                 </div>
+                <% if ( plano == 'free') { %>
+                    <buttom class="botao"><a>Assinar</a></buttom>
+                <% } %>
+                <span class="voltar"><a href="/"><button><img src="../img/Sign_out_squre.svg">Voltar</button></a></span>
             </div>
         </div>
     </section>
+
+    <section class="conteudo">
+        <div class="geral-conteudo">
+
+            <div class="boosts">
+                
+            </div>
+
+            <!-- <canvas id="myChart"></canvas> -->
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../scripts/inicio.js"></script>
 </body>
 </html>
