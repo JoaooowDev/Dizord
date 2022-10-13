@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,51 +8,133 @@
     <title>Dizord | Configurações do Servidor</title>
     <link rel="icon" href="../img/logo.svg">
     <link rel="stylesheet" href="../pagescss/servidor/servidor.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
     <section class="menulateral">
         <div class="menu">
             <div class="containermenu">
                 <div class="usuario">
-                    <img id='avatar-usuario' src="https://cdn.discordapp.com/avatars/<%= discordId %>/<%= avatar %>.png">
+                    <img id='avatar-usuario'
+                        src="https://cdn.discordapp.com/avatars/<%= discordId %>/<%= avatar %>.png">
                     <div class="nick-usuario">
-                        <h4><%= username %></h4>
-                        <p>#<%= discriminator%></p>
+                        <h4>
+                            <%= username %>
+                        </h4>
+                        <p>#<%= discriminator%>
+                        </p>
                     </div>
                 </div>
 
                 <div class="menus">
                     <p class="titlemenu">Menu</p>
                     <ul>
-                        <li class="selecionado"><img src="../img/icon-house-gray.svg"><p class="item-li">Inicio</p></li>
-                        <li><img src="../img/icon-admin.svg"><p class="item-li">Administração</p></li>
-                        <li><img src="../img/icon-game.svg"><p class="item-li">Diversão</p></li>
-                        <li><img src="../img/icon-lapis.svg"><p class="item-li">Customização</p></li>
-                        <li><img src="../img/icon-shield.svg"><p class="item-li">Proteção</p></li>
-                        <li><img src="../img/icon-wallet.svg"><p class="item-li">Financeiro</p></li>
-                        <li><img src="../img/icon-dice.svg"><p class="item-li">Sorteios</p></li>
-                        <li><img src="../img/icon-star.svg"><p class="item-li">Vip</p></li>
+                        <li class="selecionado"><img src="../img/icon-house-gray.svg">
+                            <p class="item-li">Inicio</p>
+                        </li>
+                        <li><img src="../img/icon-admin.svg">
+                            <p class="item-li">Administração</p>
+                        </li>
+                        <li><img src="../img/icon-game.svg">
+                            <p class="item-li">Diversão</p>
+                        </li>
+                        <li><img src="../img/icon-lapis.svg">
+                            <p class="item-li">Customização</p>
+                        </li>
+                        <li><img src="../img/icon-shield.svg">
+                            <p class="item-li">Proteção</p>
+                        </li>
+                        <li><img src="../img/icon-wallet.svg">
+                            <p class="item-li">Financeiro</p>
+                        </li>
+                        <li><img src="../img/icon-dice.svg">
+                            <p class="item-li">Sorteios</p>
+                        </li>
+                        <li><img src="../img/icon-star.svg">
+                            <p class="item-li">Vip</p>
+                        </li>
                     </ul>
                 </div>
-                <% if ( plano == 'free') { %>
+                <% if ( plano=='free' ) { %>
                     <buttom class="botao"><a>Assinar</a></buttom>
-                <% } %>
-                <span class="voltar"><a href="/"><button><img src="../img/Sign_out_squre.svg">Voltar</button></a></span>
+                    <% } %>
+                        <span class="voltar"><a href="/"><button><img
+                                        src="../img/Sign_out_squre.svg">Voltar</button></a></span>
             </div>
         </div>
     </section>
 
     <section class="conteudo">
         <div class="geral-conteudo">
-
-            <div class="boosts">
-                
+            <div class="boosts-total">
+                <div class="boosts-titulo">
+                    <p>BOOSTS DO SERVIDOR</p>
+                </div>
+                <div class="boosts">
+                    <div class="grafico1">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
             </div>
 
-            <!-- <canvas id="myChart"></canvas> -->
+            <div class="baixo">
+                <div class="contadordemembros">
+                    <div class="contadordemembros-titulo">
+                        <p>STATUS DOS MEMBROS</p>
+                    </div>
+                    <div class="contadordemembros-conteudo">
+                        <div class="contadordemembros-legenda">
+                            <ul>
+                                <li>
+                                    <img src="../img/icon-online.svg">
+                                    Online
+                                </li>
+                                <li>
+                                    <img src="../img/icon-ausente.svg">
+                                    Ausente
+                                </li>
+                                <li>
+                                    <img src="../img/icon-ocupado.svg">
+                                    Ocupado
+                                </li>
+                                <li>
+                                    <img src="../img/icon-offline.svg">
+                                    Offline
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contadordemembros-grafics">
+                            <canvas id="contadordemembros-grafico"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="movimentacaoservidor">
+                    <div class="movimentacaoservidor-titulo">
+                        <p>MOVIMENTAÇÃO DO SERVIDOR</p>
+                    </div>
+                    <div class="movimentacaoservidor-conteudo">
+                        <div class="movimentacaoservidor-legenda">
+                            <ul>
+                                <li>
+                                    <img src="../img/icon-entrou.svg">
+                                    Entrou
+                                </li>
+                                <li>
+                                    <img src="../img/icon-ocupado.svg">
+                                    Saiu
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="movimentacaoservidor-grafics">
+                            <canvas id="movimentacaoservidor-grafico"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="../scripts/inicio.js"></script>
+    <script src="../scripts/graficos.js"></script>
 </body>
+
 </html>
