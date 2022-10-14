@@ -55,6 +55,12 @@
         console.log(`    [Servidor] http://localhost:${PORT}/`);
     });
 
+// - Bot config
+    const {Login, Eventos} = require('./bot/index')
+    Login.then(() => {
+        Eventos()
+    })
+
 // Console
     const { meuConsole } = require('./console/consoleclear')
     meuConsole()
