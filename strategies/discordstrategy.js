@@ -1,6 +1,8 @@
 const DiscordStrategy = require('passport-discord').Strategy;
 const passport = require('passport');
 const DiscordUser = require('../models/DiscordUser');
+require('dotenv').config()
+
 
 passport.serializeUser((user, done) => {
     done(null, user.id);

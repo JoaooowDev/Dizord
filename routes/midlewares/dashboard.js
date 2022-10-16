@@ -26,7 +26,12 @@
                 const newServer = await DiscordServer.create({
                     idServidor: guild.id,
                     Plano: "free",
-                    nomeServidor: guild.name
+                    nomeServidor: guild.name,
+                    Booster: {
+                        'Janeiro': 0,
+                        'Fevereiro': 0,
+                        'Março': 0
+                    }
                 })
                 await newServer.save()
                 next()
